@@ -1,0 +1,29 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class ComputeAverageProgram
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter enter five (5) grades separated by new line: ");
+        double grade1 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine ();
+        double grade2 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine ();
+        double grade3 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine ();
+        double grade4 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine ();
+        double grade5 = Convert.ToDouble(Console.ReadLine());
+
+        double total = (grade1+grade2+grade3+grade4+grade5)/5;
+        int roundedNum = Convert.ToInt32(Math.Floor(total));
+
+        Console.WriteLine("\nThe average is " +total+ " and roundoff to " +roundedNum);
+                          
+        Console.Write("\nPress any key to exit...");
+        Console.ReadKey();
+     }
+}
